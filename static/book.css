@@ -1,0 +1,78 @@
+body {
+    background-color: #f4f4f9;
+  }
+  .tutorial-section {
+    margin: 50px 0;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .tutorial-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .back-button {
+    margin: 15px;
+  }
+  .floating-nav {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    background-color: #00bcd4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .floating-nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .floating-nav a:hover {
+    text-decoration: underline;
+  }
+  .active {
+    font-weight: bold;
+    color: #ffeb3b;
+  }
+  @media (max-width: 768px) {
+    .floating-nav {
+      display: none;
+    }
+  }
+
+  .browser-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .browser-card {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .browser-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  .browser-card img {
+    width: 60px;
+    height: 60px;
+  }
+  .browser-card p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    text-align: center;
+  }

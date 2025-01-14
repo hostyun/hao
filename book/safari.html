@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safari浏览器设置浏览器主页_海外网址导航_聚合搜索</title>
+  <meta name="description" content="享受纯净的国际互联网，安全、简单、绿色无广告的简单导航~">
+  <meta name="keywords" content="海外网址导航,网址上网导航,外网上网导航,上网导航,外网大全,聚合搜索,外网网址导航,网址导航">
+  <link rel="icon" href="/img/icon.png" type="image/png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4f9;
+    }
+    .tutorial-section {
+      margin: 50px 0;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .tutorial-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .back-button {
+      margin: 20px;
+    }
+    .floating-nav {
+      position: fixed;
+      right: 20px;
+      top: 100px;
+      background-color: #00bcd4;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .floating-nav a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .floating-nav a:hover {
+      text-decoration: underline;
+    }
+    .active {
+      font-weight: bold;
+      color: #ffeb3b;
+    }
+    @media (max-width: 768px) {
+      .floating-nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper blue">
+      <a href="/index.html" class="left waves-effect waves-light btn-small back-button">
+        首页
+      </a>
+      <a href="#" class="brand-logo center">设置浏览器主页</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="tutorial-header">
+      <h2><img src="/img/safari.png" width="80" height="80"> Safari浏览器</h2>
+      <p>苹果产品自带的浏览器，主打隐私，对中国大陆用户友好。</p>
+    </div>
+
+    <!-- 步骤1 -->
+    <div class="tutorial-section">
+      <h4>步骤 1</h4>
+      <p>1、点击Safari浏览浏览器左上角Safari浏览器选项，找到设置。</p>
+      <div class="image-container"><img src="/img/safari-1.jpg" class="responsive-img"></div>
+    </div>
+
+    <!-- 步骤2 -->
+    <div class="tutorial-section">
+      <h4>步骤 2</h4>
+      <p>在设置页面里，把 新建窗口时打开和新建标签页时打开 全部改成主页，然后在 主页 里，粘贴我们的导航网址。<a onclick="copyUrl()" class="waves-effect waves-light btn">点我复制网址</a></p>
+    
+      <div class="image-container"><img src="/img/safari-2.jpg" class="responsive-img"></div>
+    </div>
+    <!-- 更多内容 -->
+    <div class="tutorial-section">
+      <h4>更多其他浏览器设置方法</h4>
+      <p><a href="doc.html">点我进入</a></p>
+    </div>
+
+  </div>
+
+  <!-- 悬浮导航 -->
+  <div class="floating-nav">
+    <h5>快速导航</h5>
+    <a href="doc.html">汇总</a>
+    <a href="chrome.html#chrome">Chrome浏览器设置</a>
+    <a href="edge.html#edge">Edge浏览器设置</a>
+        <a href="firefox.html#firefox">Firefox浏览器设置</a>
+    <a href="safari.html#safari">Safari浏览器设置</a>
+    <a href="opera.html#opera">Opera浏览器设置</a>
+  </div>
+
+  <script>
+    function copyUrl() {
+      const currentUrl = window.location.href.replace(window.location.pathname, '/index.html?book-chrome');
+      const input = document.createElement('input');
+      input.value = currentUrl;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+      alert('复制成功！快去设置吧！');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
